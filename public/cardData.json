@@ -1,0 +1,125 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Builder",
+    "description": "Create simple and professional resumes with basic customization options.",
+    "price": 11.99,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "New",
+    "features": [
+      "10+ templates",
+      "Basic customization",
+      "Export to PDF"
+    ],
+    "icon": "/src/assets/products/design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Kit",
+    "description": "Advanced resume builder with ATS optimization and premium templates.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "Popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Cover letter builder",
+      "Export to PDF & DOCX"
+    ],
+    "icon": "/src/assets/products/operation.png"
+  },
+  {
+    "id": 3,
+    "name": "Career Booster Pack",
+    "description": "Complete toolkit for job seekers including resume, portfolio, and analytics.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "Best Seller",
+    "features": [
+      "Portfolio builder",
+      "Resume analytics",
+      "LinkedIn optimization",
+      "Priority support"
+    ],
+    "icon": "/src/assets/products/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Freelancer Portfolio",
+    "description": "Build a stunning online portfolio to showcase your freelance work.",
+    "price": 19.99,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "New",
+    "features": [
+      "Custom domains",
+      "Drag & drop editor",
+      "SEO optimization"
+    ],
+    "icon": "/src/assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 5,
+    "name": "Interview Prep AI",
+    "description": "Practice interviews with AI and get instant feedback.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "Best Seller",
+    "features": [
+      "Mock interviews",
+      "AI feedback",
+      "Common question bank"
+    ],
+    "icon": "/src/assets/products/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "Job Tracker",
+    "description": "Track all your job applications in one place.",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "Popular",
+    "features": [
+      "Application tracking",
+      "Status updates",
+      "Reminders"
+    ],
+    "icon": "/src/assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 7,
+    "name": "Ultimate Career Suite",
+    "description": "All-in-one career development platform with premium tools.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "Best Seller",
+    "features": [
+      "Resume builder",
+      "Portfolio creator",
+      "Interview AI",
+      "Job tracking"
+    ],
+    "icon": "/src/assets/products/operation.png"
+  },
+  {
+    "id": 8,
+    "name": "Cover Letter Generator",
+    "description": "Generate personalized cover letters quickly using AI.",
+    "price": 7.99,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "New",
+    "features": [
+      "AI writing assistant",
+      "Multiple formats",
+      "Instant download"
+    ],
+    "icon": "/src/assets/products/design-tool.png"
+  }
+]
