@@ -1,13 +1,23 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { TiTick } from 'react-icons/ti';
+import { toast } from 'react-toastify';
 
 const Card = ({ card, carts, setCarts }) => {
 
-    const [isBuyNow, setBuyNow] = useState(false);
+    // const [isBuyNow, setBuyNow] = useState(false);
+
+    const isFoundCard = carts.find(checkCard => checkCard.id === card.id);
 
     const handleBuy = () => {
-        setBuyNow(true);
+        // setBuyNow(true);
+
+        if(isFoundCard){
+            toast.error("Product already in the cart!");
+            return;
+        }
+
         setCarts([...carts, card]);
+        toast.success("Product added to cart!");
     }
 
     return (
@@ -49,8 +59,8 @@ const Card = ({ card, carts, setCarts }) => {
                     </ul>
 
                     <div className="mt-8">
-                        <button onClick={handleBuy} className={`btn ${isBuyNow ? "bg-green-500 text-white" : "btn-primary"} w-full rounded-full`}>
-                            {isBuyNow ? (
+                        <button onClick={handleBuy} className={`btn ${(isFoundCard) ? "bg-green-500 text-white" : "btn-primary"} w-full rounded-full`}>
+                            {(isFoundCard) ? (
                                 <span className="flex items-center justify-center gap-2">
                                     <TiTick className="text-xl" /> Added to Cart
                                 </span>

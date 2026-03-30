@@ -1,9 +1,15 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Cart = ({ carts, setCarts }) => {
 
     const calculatePrice = carts.reduce((sum, item) => sum + item.price, 0);
     const totalPrice = calculatePrice.toFixed(3);
+
+    const handlePayment = () => {
+        setCarts([]);
+        toast.success("Payment Successful");
+    }
 
     const handleRemove = (item) => {
         // console.log("Clicked remove");
@@ -11,6 +17,7 @@ const Cart = ({ carts, setCarts }) => {
 
         const filteredCart = carts.filter(removeClickedCard => removeClickedCard.id !== item.id);
         setCarts(filteredCart);
+        toast.success("Product removed!");
         
     }
 
@@ -40,7 +47,7 @@ const Cart = ({ carts, setCarts }) => {
                             <h1 className='text-xl font-bold'>Total:</h1>
                             <h3 className='text-2xl font-bold'>${totalPrice}</h3>
                         </div>
-                        <button className='btn w-full rounded-full text-white bg-green-600' onClick={() => setCarts([])}>Proceed to Checkout</button>
+                        <button className='btn w-full rounded-full text-white bg-green-600' onClick={handlePayment}>Proceed to Checkout</button>
                     </div>
                 </>
             }
