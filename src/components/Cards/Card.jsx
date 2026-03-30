@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { TiTick } from 'react-icons/ti';
 
-const Card = ({ card }) => {
+const Card = ({ card, carts, setCarts }) => {
 
     const [isBuyNow, setBuyNow] = useState(false);
 
     const handleBuy = () => {
         setBuyNow(true);
+        setCarts([...carts, card]);
     }
 
     return (

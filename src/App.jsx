@@ -18,9 +18,12 @@ function App() {
   const [activeTab, setActiveTab] = useState("Products");
   // console.log(activeTab);
 
+  const [carts, setCarts] = useState([]);
+  // console.log(carts);
+
   return (
     <>
-      <Navbar />
+      <Navbar carts = {carts}/>
       <Stats />
       <Banner />
       <div className='text-center mb-10'>
@@ -32,10 +35,10 @@ function App() {
       {/* name of each tab group should be unique */}
       <div className="tabs tabs-box justify-center bg-transparent">
         <input type="radio" name="my_tabs_1" className={`${activeTab === "Products" ? "tab rounded-full px-10 font-semibold bg-indigo-500 text-white w-40" : "tab w-40 font-semibold"}`} aria-label="Products" defaultChecked onClick={() => setActiveTab("Products")} />
-        <input type="radio" name="my_tabs_1" className={`${activeTab === "Cart" ? "tab rounded-full px-10 font-semibold bg-indigo-500 text-white w-40" : "tab w-40 font-semibold"}`} aria-label="Cart" onClick={() => setActiveTab("Cart")} />
+        <input type="radio" name="my_tabs_1" className={`${activeTab === "Cart" ? "tab rounded-full px-10 font-semibold bg-indigo-500 text-white w-40" : "tab w-40 font-semibold"}`} aria-label={`Carts(${carts.length})`} onClick={() => setActiveTab("Cart")} />
       </div>
-      {activeTab === "Products" && <Cards cardPromise={cardPromise} />}
-      {activeTab === "Cart" && <Cart />}
+      {activeTab === "Products" && <Cards cardPromise={cardPromise} carts = {carts} setCarts ={setCarts} />}
+      {activeTab === "Cart" && <Cart carts = {carts} setCarts ={setCarts} />}
     </>
   )
 }
