@@ -7,6 +7,8 @@ import Navbar from './components/Navbar/Navbar'
 import Stats from './components/Stats/Stats'
 import Steps from './components/Steps/Steps'
 import PricingCard from './components/PricingCard/PricingCard'
+import WorkflowSection from './components/WorkflowSection/WorkflowSection'
+import Footer from './components/Footer/Footer'
 
 const getCardsData = async () => {
   const res = await fetch("/cardData.json")
@@ -44,6 +46,8 @@ function App() {
 
       <Steps/>
       <PricingCard/>
+      <WorkflowSection/>
+      <Footer/>
     </>
   )
 }
