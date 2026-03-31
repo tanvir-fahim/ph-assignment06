@@ -12,7 +12,7 @@
       "Basic customization",
       "Export to PDF"
     ],
-    "icon": "/src/assets/products/design-tool.png"
+    "icon": "/products/builder.png"
   },
   {
     "id": 2,
@@ -28,7 +28,7 @@
       "Cover letter builder",
       "Export to PDF & DOCX"
     ],
-    "icon": "/src/assets/products/operation.png"
+    "icon": "/products/kit.png"
   },
   {
     "id": 3,
@@ -44,7 +44,7 @@
       "LinkedIn optimization",
       "Priority support"
     ],
-    "icon": "/src/assets/products/portfolio.png"
+    "icon": "/products/booster.png"
   },
   {
     "id": 4,
@@ -59,7 +59,7 @@
       "Drag & drop editor",
       "SEO optimization"
     ],
-    "icon": "/src/assets/products/writing_2327400 1.png"
+    "icon": "/products/freelancer.png"
   },
   {
     "id": 5,
@@ -74,7 +74,7 @@
       "AI feedback",
       "Common question bank"
     ],
-    "icon": "/src/assets/products/social-media.png"
+    "icon": "/products/prep.png"
   },
   {
     "id": 6,
@@ -89,7 +89,7 @@
       "Status updates",
       "Reminders"
     ],
-    "icon": "/src/assets/products/writing_2327400 1.png"
+    "icon": "/products/tracker.png"
   },
   {
     "id": 7,
@@ -105,7 +105,7 @@
       "Interview AI",
       "Job tracking"
     ],
-    "icon": "/src/assets/products/operation.png"
+    "icon": "/products/career.png"
   },
   {
     "id": 8,
@@ -120,6 +120,6 @@
       "Multiple formats",
       "Instant download"
     ],
-    "icon": "/src/assets/products/design-tool.png"
+    "icon": "/products/cv.png"
   }
 ]

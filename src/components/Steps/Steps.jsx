@@ -1,4 +1,7 @@
 import React from 'react';
+import userImage from "../../assets/user.png"
+import packageImage from "../../assets/package.png"
+import rocketImage from "../../assets/rocket.png"
 
 const Steps = () => {
     return (
@@ -18,7 +21,7 @@ const Steps = () => {
                             </button>
                         </div>
                         <div className='bg-indigo-100 mx-auto h-20 w-20 p-5 rounded-full'>
-                            <img src="/src/assets/user.png" alt="" />
+                            <img src= {userImage} alt="" />
                         </div>
                         <div className='text-center space-y-3 mb-10'>
                             <h2 className='text-2xl font-bold'>Create Account</h2>
@@ -35,7 +38,7 @@ const Steps = () => {
                             </button>
                         </div>
                         <div className='bg-indigo-100 mx-auto h-20 w-20 p-5 rounded-full'>
-                            <img src="/src/assets/package.png" alt="" />
+                            <img src= {packageImage} alt="" />
                         </div>
                         <div className='text-center space-y-3 mb-10'>
                             <h2 className='text-2xl font-bold'>Choose Products</h2>
@@ -52,7 +55,7 @@ const Steps = () => {
                             </button>
                         </div>
                         <div className='bg-indigo-100 mx-auto h-20 w-20 p-5 rounded-full'>
-                            <img src="/src/assets/rocket.png" alt="" />
+                            <img src= {rocketImage} alt="" />
                         </div>
                         <div className='text-center space-y-3 mb-10'>
                             <h2 className='text-2xl font-bold'>Start Creating</h2>

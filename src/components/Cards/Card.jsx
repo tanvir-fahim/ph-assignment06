@@ -34,7 +34,7 @@ const Card = ({ card, carts, setCarts }) => {
                         </span>
                     </div>
 
-                    <div className="py-4">
+                    <div>
                         <img src={card.icon} alt={card.name} className="h-12 w-12" />
                     </div>
 

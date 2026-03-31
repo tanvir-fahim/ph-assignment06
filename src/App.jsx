@@ -5,9 +5,6 @@ import Cards from './components/Cards/Cards'
 import Cart from './components/Cart/Cart'
 import Navbar from './components/Navbar/Navbar'
 import Stats from './components/Stats/Stats'
-import Steps from './components/Steps/Steps'
-import PricingCard from './components/PricingCard/PricingCard'
-import WorkflowSection from './components/WorkflowSection/WorkflowSection'
 import Footer from './components/Footer/Footer'
 
 const getCardsData = async () => {
@@ -44,9 +41,6 @@ function App() {
       {activeTab === "Products" && <Cards cardPromise={cardPromise} carts = {carts} setCarts ={setCarts} />}
       {activeTab === "Cart" && <Cart carts = {carts} setCarts ={setCarts} />}
 
-      <Steps/>
-      <PricingCard/>
-      <WorkflowSection/>
       <Footer/>
     </>
   )
